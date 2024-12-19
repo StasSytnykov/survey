@@ -1,0 +1,49 @@
+[
+  {
+    "id": "q1",
+    "question": "Select your gender:",
+    "statement": "",
+    "screenType": "singleChoice",
+    "questionType": "general",
+    "options": [
+      { "label": "Female", "next": "q2" },
+      { "label": "Male", "next": "q2" }
+    ]
+  },
+  {
+    "id": "q2",
+    "question": "So we can get to know you better, tell us about your relationship status.",
+    "statement": "",
+    "screenType": "singleChoice",
+    "questionType": "general",
+    "options": [
+      { "label": "Single", "next": "single" },
+      {
+        "label": "In a relationship",
+        "next": "relationship"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "question": "Are you a parent?",
+    "statement": "",
+    "screenType": "singleChoice",
+    "questionType": "relationship",
+    "options": [
+      { "label": "Yes", "next": "q10" },
+      { "label": "No", "next": "q10" }
+    ]
+  },
+  {
+    "id": "q4",
+    "question": "Are you a single parent?",
+    "statement": "",
+    "screenType": "singleChoice",
+    "questionType": "single",
+    "options": [
+      { "label": "Yes", "next": "q5" },
+      { "label": "No", "next": "q5" }
+    ]
+  }
+]

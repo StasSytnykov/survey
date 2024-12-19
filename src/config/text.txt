@@ -1,0 +1,102 @@
+//   {
+//     "id": "q5",
+//     "question": "Single {gender} {who have children (if have children)} need a slightly different approach to find their perfect partner. But first, how did you feel in your last relationship?",
+//     "statement": "",
+//     "screenType": "singleChoice",
+//     "questionType": "relationship",
+//     "options": [
+//       "I was unhappy with low things were going in my relationship",
+//       "I was unhappy with parts of my relationship, but some thing were working",
+//       "I was generally happy with my relationship",
+//       "I’ve never been in a relationship"
+//     ]
+//   },
+//   {
+//     "id": "q6",
+//     "question": "Is your partner an introvert or extrovert?",
+//     "statement": "",
+//     "screenType": "singleChoice",
+//     "questionType": "relationship",
+//     "options": ["Introvert", "Extrovert", "A bit of both"]
+//   },
+//   {
+//     "id": "q7",
+//     "question": "Do you agree with the statement below?",
+//     "statement": "“My partner and I make sex a priority in our relationship”",
+//     "screenType": "singleChoice",
+//     "questionType": "relationship",
+//     "options": [
+//       "Strongly agree",
+//       "Agree",
+//       "Neutral",
+//       "Disagee",
+//       "Strongly disagree"
+//     ]
+//   },
+//   {
+//     "id": "q8",
+//     "question": "When you think about your relationship goals, you feel...?",
+//     "statement": "",
+//     "screenType": "singleChoice",
+//     "questionType": "relationship",
+//     "options": [
+//       "Optimistic! They are totally doable, with some guidance.",
+//       "Cautious. I’ve struggled before, but I’m hopeful.",
+//       "Neutral",
+//       "Disagee",
+//       "I’m feeling a little anxious, honestly."
+//     ]
+//   },
+//   {
+//     "id": "q9",
+//     "question": "Where did you hear about us?",
+//     "statement": "",
+//     "screenType": "singleChoice",
+//     "questionType": "general",
+//     "options": [
+//       "Poster or Billboard",
+//       "Friend or Family",
+//       "Instagram",
+//       "Direct Mail or Package Insert",
+//       "Online TV or Streaming TV",
+//       "TV",
+//       "Radio",
+//       "Search Engine (Google, Bing, etc.)",
+//       "Newspaper or Magazine",
+//       "Facebook",
+//       "Blog Post or Website Review",
+//       "Podcast",
+//       "Influencer",
+//       "Youtube",
+//       "Pinterest",
+//       "Other"
+//     ]
+//   },
+//   {
+//     "id": "q10",
+//     "question": "{Gender} {who have children (if have children)} need a slightly different approach to improve their relationship. Which statement best describes you?",
+//     "statement": "",
+//     "screenType": "singleChoice",
+//     "questionType": "single",
+//     "options": [
+//       "I’m very unhappy with how things are going in my relationship",
+//       "I’m unhappy with parts of my relationship, but some things are working well",
+//       "I’m generally happy in my relationship"
+//     ]
+//   },
+//   {
+//     "id": "q11",
+//     "question": "Do you tend to overthink?",
+//     "statement": "",
+//     "screenType": "singleChoice",
+//     "questionType": "single",
+//     "options": ["Yes", "No"]
+//   },
+//   {
+//     "id": "q12",
+//     "question": "So how does it work?",
+//     "statement": "We analyze hundreds of data points to create your unique astrological blueprint. This is combined with AI to tailor-make your astrological insights, based on your answers. We’re going to change your relationship with astrology.",
+//     "screenType": "singleChoice",
+//     "questionType": "single",
+//     "options": []
+//   }

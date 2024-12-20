@@ -1,6 +1,6 @@
 interface Option {
   label: string;
-  next: string;
+  next: string | null;
 }
 
 export interface QuestionData {

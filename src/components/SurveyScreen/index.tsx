@@ -11,7 +11,11 @@ interface SurveyScreenProps {
 export const SurveyScreen = ({ questionData }: SurveyScreenProps) => {
   const router = useRouter();
 
-  const handleClick = (nextQuestion: string) => {
+  const handleClick = (nextQuestion: string | null) => {
+    if (nextQuestion === null) {
+      return router.push("/results");
+    }
+
     router.push(nextQuestion);
   };
 

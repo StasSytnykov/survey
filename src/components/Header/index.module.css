@@ -1,0 +1,12 @@
+.nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 15px 15px;
+  max-width: 1230px;
+}
+
+.link:not(:first-child) {
+  justify-self: center;
+}

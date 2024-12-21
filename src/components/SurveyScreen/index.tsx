@@ -14,6 +14,8 @@ interface SurveyScreenProps {
 export const SurveyScreen = ({ questionData }: SurveyScreenProps) => {
   const { handleButtonClick } = useClickButton({
     question: questionData.question,
+      id: questionData.id,
+    screenType: questionData.screenType,
   });
   const { storedScreenType } = useScreenType({
     screenType: questionData.screenType,

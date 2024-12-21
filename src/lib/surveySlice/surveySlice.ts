@@ -5,6 +5,7 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 interface Answers {
   question: string;
   result: string;
+  id: string;
 }
 
 export interface SurveySliceState {
@@ -22,7 +23,14 @@ export const surveySlice = createSlice({
   initialState,
   reducers: (create) => ({
     setAnswers: create.reducer((state, action: PayloadAction<Answers>) => {
-      state.answers.push(action.payload);
+      const isInAnswers = state.answers.findIndex(
+        (answer) => answer.id === action.payload.id
+      );
+      if (isInAnswers > -1) {
+        state.answers[isInAnswers].result = action.payload.result;
+      } else {
+        state.answers.push(action.payload);
+      }
     }),
     resetAnswers: create.reducer((state) => {
       state.answers = [];
@@ -40,6 +48,6 @@ export const surveySlice = createSlice({
   },
 });
 
-export const { setAnswers, setScreenType,resetAnswers } = surveySlice.actions;
+export const { setAnswers, setScreenType, resetAnswers } = surveySlice.actions;
 
 export const { selectAnswers, selectScreenType } = surveySlice.selectors;

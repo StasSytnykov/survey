@@ -1,3 +1,4 @@
+import { ScreenType } from "@/src/types";
 import { useRouter } from "next/navigation";
 
 import { useAppDispatch } from "../lib/hooks";
@@ -6,9 +7,15 @@ import { Option } from "../types";
 
 interface UseClickButtonProps {
   question: string;
+  id: string;
+  screenType: ScreenType;
 }
 
-export const useClickButton = ({ question }: UseClickButtonProps) => {
+export const useClickButton = ({
+  question,
+  id,
+  screenType,
+}: UseClickButtonProps) => {
   const router = useRouter();
   const dispatch = useAppDispatch();
 
@@ -17,7 +24,10 @@ export const useClickButton = ({ question }: UseClickButtonProps) => {
       return router.push("/results");
     }
 
-    dispatch(setAnswers({ question, result: label }));
+    if (screenType !== ScreenType.INFO) {
+      dispatch(setAnswers({ question, result: label, id: id }));
+    }
+
     router.push(next);
   };
 

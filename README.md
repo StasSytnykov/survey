@@ -73,9 +73,9 @@ You can add or modify question configurations in the project by following this e
 - `id`: A unique identifier for the question.
 - `question`: The main question to display.
 - `statement`: Additional context or information to display (optional).
-- `screenType`: Defines the type of input. For example, `singleChoice` or `info` for information screens.
+- `screenType`: Defines the type of input. Here is the three possible types `singleChoice`, `textInput` and `info`
 - `options`: An array of possible answers. Each option contains:
-  - `label`: The answer text.
+  - `label`: The answer text or the next step button if it's `textInput` type.
   - `next`: The ID of the next question or `null` if it is the last question.
 
 ### File Location

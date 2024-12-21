@@ -13,6 +13,5 @@ export interface QuestionData {
   question: string;
   statement: string;
   screenType: ScreenType;
-  questionType: string;
   options: Option[];
 }

@@ -4,7 +4,6 @@
     "question": "What is your age group?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "general",
     "options": [
       { "label": "Under 18", "next": "q2" },
       { "label": "18-24", "next": "q2" },
@@ -18,7 +17,6 @@
     "question": "How would you describe your current relationship status?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "general",
     "options": [
       { "label": "Single", "next": "q3" },
       { "label": "In a relationship", "next": "q4" },
@@ -31,7 +29,6 @@
     "question": "Are you currently looking for a relationship?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "single",
     "options": [
       { "label": "Yes", "next": "q6" },
       { "label": "No", "next": "q6" },
@@ -43,7 +40,6 @@
     "question": "Do you and your partner often discuss your future goals together?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "relationship",
     "options": [
       { "label": "Yes, frequently", "next": "q6" },
       { "label": "Occasionally", "next": "q6" },
@@ -56,7 +52,6 @@
     "question": "How do you feel about re-entering the dating world?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "relationship",
     "options": [
       { "label": "Excited", "next": "q6" },
       { "label": "Cautious", "next": "q6" },
@@ -69,7 +64,6 @@
     "question": "What is most important to you in a partner?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "relationship",
     "options": [
       { "label": "Trust", "next": "q7" },
       { "label": "Communication", "next": "q7" },
@@ -82,7 +76,6 @@
     "question": "How do you prefer to spend quality time with a partner?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "relationship",
     "options": [
       { "label": "Talking and bonding", "next": "q8" },
       { "label": "Adventuring or traveling", "next": "q8" },
@@ -95,7 +88,6 @@
     "question": "Do you believe conflict is healthy in a relationship?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "relationship",
     "options": [
       { "label": "Yes, when handled constructively", "next": "q9" },
       { "label": "Sometimes, but it depends", "next": "q9" },
@@ -108,7 +100,6 @@
     "question": "Where did you hear about this survey?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "general",
     "options": [
       { "label": "Social media", "next": null },
       { "label": "Friend or family", "next": null },

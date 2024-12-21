@@ -4,7 +4,6 @@
     "question": "Select your gender:",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "general",
     "options": [
       { "label": "Female", "next": "q2" },
       { "label": "Male", "next": "q2" }
@@ -15,7 +14,6 @@
     "question": "So we can get to know you better, tell us about your relationship status.",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "general",
     "options": [
       { "label": "Single", "next": "q4" },
       {
@@ -29,7 +27,6 @@
     "question": "Are you a parent?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "relationship",
     "options": [
       { "label": "Yes", "next": "q5" },
       { "label": "No", "next": "q5" }
@@ -40,7 +37,6 @@
     "question": "Are you a single parent?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "single",
     "options": [
       { "label": "Yes", "next": "q11" },
       { "label": "No", "next": "q11" }
@@ -51,7 +47,6 @@
     "question": "Single {gender} {who have children} need a slightly different approach to find their perfect partner. But first, how did you feel in your last relationship?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "relationship",
     "options": [
       {
         "label": "I was unhappy with low things were going in my relationship",
@@ -70,7 +65,6 @@
     "question": "Is your partner an introvert or extrovert?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "relationship",
     "options": [
       { "label": "Introvert", "next": "q7" },
       { "label": "Extrovert", "next": "q7" },
@@ -82,7 +76,6 @@
     "question": "What is your partner’s gender?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "relationship",
     "options": [
       { "label": "Male", "next": "q8" },
       { "label": "Female", "next": "q8" }
@@ -93,7 +86,6 @@
     "question": "Do you agree with the statement below?",
     "statement": "“My partner and I make sex a priority in our relationship”",
     "screenType": "singleChoice",
-    "questionType": "relationship",
     "options": [
       { "label": "Strongly agree", "next": "q9" },
       { "label": "Agree", "next": "q9" },
@@ -107,7 +99,6 @@
     "question": "When you think about your relationship goals, you feel...?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "relationship",
     "options": [
       {
         "label": "Optimistic! They are totally doable, with some guidance.",
@@ -127,7 +118,6 @@
     "question": "Where did you hear about us?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "general",
     "options": [
       { "label": "Poster or Billboard", "next": null },
       { "label": "Friend or Family", "next": null },
@@ -152,7 +142,6 @@
     "question": "{Gender} {who have children} need a slightly different approach to improve their relationship. Which statement best describes you?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "single",
     "options": [
       {
         "label": "I’m very unhappy with how things are going in my relationship",
@@ -170,7 +159,6 @@
     "question": "Do you tend to overthink?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "single",
     "options": [
       { "label": "Yes", "next": "q13" },
       { "label": "No", "next": "q14" }
@@ -181,7 +169,6 @@
     "question": "So how does it work?",
     "statement": "We analyze hundreds of data points to create your unique astrological blueprint. This is combined with AI to tailor-make your astrological insights, based on your answers. We’re going to change your relationship with astrology.",
     "screenType": "info",
-    "questionType": "single",
     "options": [{ "label": "Next", "next": "q15" }]
   },
   {
@@ -189,7 +176,6 @@
     "question": "So how does it work?",
     "statement": "We analyze hundreds of data points to create your unique astrological blueprint. This is combined with AI to tailor-make your astrological insights, based on your answers. We’re going to change your relationship with astrology.",
     "screenType": "info",
-    "questionType": "single",
     "options": [{ "label": "Next", "next": "q16" }]
   },
   {
@@ -197,7 +183,6 @@
     "question": "What is most important to you?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "single",
     "options": [
       { "label": "Success", "next": "q10" },
       { "label": "Romance", "next": "q10" },
@@ -210,7 +195,6 @@
     "question": "Is emotional control tricky for you?",
     "statement": "",
     "screenType": "singleChoice",
-    "questionType": "single",
     "options": [
       { "label": "Yes", "next": "q10" },
       { "label": "Sometimes", "next": "q10" },

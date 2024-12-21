@@ -44,7 +44,7 @@ export const TextInputScreen = ({ screenData }: SurveyScreenProps) => {
         }
         screenType={screenData.screenType}
       >
-        <span>Next</span>
+        <span>{screenData.options[0].label}</span>
       </Button>
     </section>
   );

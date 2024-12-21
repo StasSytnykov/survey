@@ -15,19 +15,12 @@
     "statement": "",
     "screenType": "singleChoice",
     "options": [
-      { "label": "Single", "next": "q20" },
+      { "label": "Single", "next": "q4" },
       {
         "label": "In a relationship",
         "next": "q3"
       }
     ]
-  },
-  {
-    "id": "q20",
-    "question": "How old are you?",
-    "statement": "",
-    "screenType": "textInput",
-    "options": [{ "label": "Age", "next": "q4" }]
   },
   {
     "id": "q3",

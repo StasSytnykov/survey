@@ -1,0 +1,106 @@
+[
+  {
+    "id": "q1",
+    "question": "What is your favorite type of activity?",
+    "statement": "",
+    "screenType": "singleChoice",
+    "options": [
+      { "label": "Outdoor", "next": "q2" },
+      { "label": "Indoor", "next": "q6" }
+    ]
+  },
+  {
+    "id": "q2",
+    "question": "Which outdoor activity do you enjoy the most?",
+    "statement": "",
+    "screenType": "singleChoice",
+    "options": [
+      { "label": "Hiking", "next": "q3" },
+      { "label": "Cycling", "next": "q3" },
+      { "label": "Running", "next": "q3" }
+    ]
+  },
+  {
+    "id": "q3",
+    "question": "Why do you enjoy this activity? (e.g., health benefits, nature, socializing)",
+    "statement": "",
+    "screenType": "textInput",
+    "options": [{ "label": "Next", "next": "q4" }]
+  },
+  {
+    "id": "q4",
+    "question": "Do you prefer solo or group activities?",
+    "statement": "",
+    "screenType": "singleChoice",
+    "options": [
+      { "label": "Solo", "next": "q6" },
+      { "label": "Group", "next": "q5" }
+    ]
+  },
+  {
+    "id": "q5",
+    "question": "How often do you go running?",
+    "statement": "",
+    "screenType": "singleChoice",
+    "options": [
+      { "label": "Every day", "next": "q6" },
+      { "label": "A few times a week", "next": "q6" },
+      { "label": "Occasionally", "next": "q6" }
+    ]
+  },
+  {
+    "id": "q6",
+    "question": "Which indoor activity do you prefer?",
+    "statement": "",
+    "screenType": "singleChoice",
+    "options": [
+      { "label": "Reading", "next": "q7" },
+      { "label": "Gaming", "next": "q7" },
+      { "label": "Cooking", "next": "q8" }
+    ]
+  },
+  {
+    "id": "q7",
+    "question": "What type of books do you enjoy reading?",
+    "statement": "",
+    "screenType": "textInput",
+    "options": [
+      {
+        "label": "Next",
+        "next": "q8"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "question": "Which genre of games do you play the most?",
+    "statement": "",
+    "screenType": "singleChoice",
+    "options": [
+      { "label": "Action", "next": "q9" },
+      { "label": "Strategy", "next": "q9" },
+      { "label": "RPG", "next": "q10" }
+    ]
+  },
+  {
+    "id": "q9",
+    "question": "Do you enjoy cooking for yourself or for others?",
+    "statement": "",
+    "screenType": "singleChoice",
+    "options": [
+      { "label": "For myself", "next": "q10" },
+      { "label": "For others", "next": "q10" },
+      { "label": "Both equally", "next": "q10" }
+    ]
+  },
+  {
+    "id": "q10",
+    "question": "Do you play multiplayer games?",
+    "statement": "",
+    "screenType": "singleChoice",
+    "options": [
+      { "label": "Yes", "next": null },
+      { "label": "No", "next": null }
+    ]
+  }
+]

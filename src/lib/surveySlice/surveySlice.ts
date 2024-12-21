@@ -24,6 +24,9 @@ export const surveySlice = createSlice({
     setAnswers: create.reducer((state, action: PayloadAction<Answers>) => {
       state.answers.push(action.payload);
     }),
+    resetAnswers: create.reducer((state) => {
+      state.answers = [];
+    }),
     setScreenType: create.reducer(
       (state, action: PayloadAction<ScreenType>) => {
         state.screenType = action.payload;
@@ -37,6 +40,6 @@ export const surveySlice = createSlice({
   },
 });
 
-export const { setAnswers, setScreenType } = surveySlice.actions;
+export const { setAnswers, setScreenType,resetAnswers } = surveySlice.actions;
 
 export const { selectAnswers, selectScreenType } = surveySlice.selectors;

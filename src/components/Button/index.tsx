@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 
 interface ButtonProps {
   children: ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 export const Button = ({ children, onClick }: ButtonProps) => {

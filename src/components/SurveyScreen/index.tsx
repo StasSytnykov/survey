@@ -25,7 +25,7 @@ export const SurveyScreen = ({ questionData }: SurveyScreenProps) => {
         {questionData.options.map((option) => (
           <li key={option.label}>
             <Button onClick={() => handleButtonClick(option)}>
-              {option.label}
+              <span>{option.label}</span>
             </Button>
           </li>
         ))}

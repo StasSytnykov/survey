@@ -24,10 +24,6 @@ export const useClickButton = ({
   const dispatch = useAppDispatch();
 
   const handleButtonClick = ({ label, next }: Option) => {
-    if (next === null) {
-      return router.push("/results");
-    }
-
     if (question.toLowerCase().includes("your gender")) {
       dispatch(setGender(label));
     }
@@ -41,6 +37,10 @@ export const useClickButton = ({
 
     if (screenType !== ScreenType.INFO) {
       dispatch(setAnswers({ question, result: label, id: id }));
+    }
+
+    if (next === null) {
+      return router.push("/results");
     }
 
     router.push(next);

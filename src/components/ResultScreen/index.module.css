@@ -26,3 +26,7 @@
   line-height: 28px;
   margin-bottom: 6px;
 }
+
+.resultItem h2::first-letter {
+  text-transform: capitalize;
+}

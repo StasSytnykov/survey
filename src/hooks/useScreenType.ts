@@ -3,11 +3,7 @@ import { useAppDispatch, useAppSelector } from "../lib/hooks";
 import { ScreenType } from "../types";
 import { setScreenType } from "../lib/surveySlice/surveySlice";
 
-interface UseScreenType {
-  screenType: ScreenType;
-}
-
-export const useScreenType = ({ screenType }: UseScreenType) => {
+export const useScreenType = (screenType: ScreenType) => {
   const dispatch = useAppDispatch();
   const storedScreenType = useAppSelector((state) => state.survey.screenType);
 

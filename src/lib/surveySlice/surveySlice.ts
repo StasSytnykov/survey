@@ -10,11 +10,15 @@ interface Answers {
 
 export interface SurveySliceState {
   answers: Answers[];
+  parentStatus: boolean | null;
+  gender: string;
   screenType: ScreenType;
 }
 
 const initialState: SurveySliceState = {
   answers: [],
+  parentStatus: null,
+  gender: "",
   screenType: ScreenType.SINGLE,
 };
 
@@ -40,14 +44,28 @@ export const surveySlice = createSlice({
         state.screenType = action.payload;
       }
     ),
+    setGender: create.reducer((state, action: PayloadAction<string>) => {
+      state.gender = action.payload;
+    }),
+    setParentStatus: create.reducer((state, action: PayloadAction<string>) => {
+      state.parentStatus = action.payload === "Yes";
+    }),
   }),
 
   selectors: {
     selectAnswers: (state) => state.answers,
     selectScreenType: (state) => state.screenType,
+    selectGender: (state) => state.gender,
+    selectParentStatus: (state) => state.parentStatus,
   },
 });
 
-export const { setAnswers, setScreenType, resetAnswers } = surveySlice.actions;
+export const {
+  setAnswers,
+  setScreenType,
+  resetAnswers,
+  setGender,
+  setParentStatus,
+} = surveySlice.actions;
 
 export const { selectAnswers, selectScreenType } = surveySlice.selectors;

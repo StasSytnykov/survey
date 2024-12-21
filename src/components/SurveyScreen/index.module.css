@@ -30,6 +30,10 @@
   color: #333333;
 }
 
+.question::first-letter {
+  text-transform: capitalize;
+}
+
 .question[data-screen-type="info"] {
   color: #fbfbff;
   text-align: center;

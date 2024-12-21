@@ -2,7 +2,11 @@ import { ScreenType } from "@/src/types";
 import { useRouter } from "next/navigation";
 
 import { useAppDispatch } from "../lib/hooks";
-import { setAnswers } from "../lib/surveySlice/surveySlice";
+import {
+  setAnswers,
+  setGender,
+  setParentStatus,
+} from "../lib/surveySlice/surveySlice";
 import { Option } from "../types";
 
 interface UseClickButtonProps {
@@ -22,6 +26,20 @@ export const useClickButton = ({
   const handleButtonClick = ({ label, next }: Option) => {
     if (next === null) {
       return router.push("/results");
+    }
+
+    if (question.toLowerCase().includes("your gender")) {
+      console.log("test");
+      console.log(label);
+
+      dispatch(setGender(label));
+    }
+
+    if (
+      question.toLowerCase().includes("parent") &&
+      question.toLowerCase().includes("you")
+    ) {
+      dispatch(setParentStatus(label));
     }
 
     if (screenType !== ScreenType.INFO) {

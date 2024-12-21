@@ -3,9 +3,10 @@
 import { QuestionData } from "@/src/types";
 import { useClickButton } from "@/src/hooks/useClickButton";
 
-import styles from "./index.module.css";
-import { Button } from "../Button";
 import { useScreenType } from "@/src/hooks/useScreenType";
+import { Button } from "../Button";
+import styles from "./index.module.css";
+import { useInterpolateQuestion } from "@/src/hooks/useInterpolateQuestion";
 
 interface SurveyScreenProps {
   questionData: QuestionData;
@@ -14,13 +15,14 @@ interface SurveyScreenProps {
 export const SurveyScreen = ({ questionData }: SurveyScreenProps) => {
   const { handleButtonClick } = useClickButton({
     question: questionData.question,
-      id: questionData.id,
+    id: questionData.id,
     screenType: questionData.screenType,
   });
-  const { storedScreenType } = useScreenType({
-    screenType: questionData.screenType,
-  });
-
+  const { storedScreenType } = useScreenType(questionData.screenType);
+  const { interpolatedQuestion } = useInterpolateQuestion(
+    questionData.question
+  );
+    
   return (
     <section className={styles.surveyScreen}>
       <div
@@ -28,7 +30,7 @@ export const SurveyScreen = ({ questionData }: SurveyScreenProps) => {
         data-screen-type={storedScreenType}
       />
       <h1 className={styles.question} data-screen-type={storedScreenType}>
-        {questionData.question}
+        {interpolatedQuestion}
       </h1>
       {questionData.statement && (
         <p

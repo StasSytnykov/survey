@@ -21,9 +21,11 @@ interface Params {
   params: Promise<{ id: string }>;
 }
 
-export default async function Page({ params }: Params) {
+const Page = async ({ params }: Params) => {
   const { id } = await params;
   const questionData = getQuestion(id);
 
   return <SurveyScreen questionData={questionData} />;
-}
+};
+
+export default Page;

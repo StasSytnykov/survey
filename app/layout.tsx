@@ -17,7 +17,7 @@ interface Props {
   readonly children: ReactNode;
 }
 
-export default function RootLayout({ children }: Props) {
+const RootLayout = ({ children }: Props) => {
   return (
     <StoreProvider>
       <html lang="en" className={openSans.className}>
@@ -32,4 +32,6 @@ export default function RootLayout({ children }: Props) {
       </html>
     </StoreProvider>
   );
-}
+};
+
+export default RootLayout;

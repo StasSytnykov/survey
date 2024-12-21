@@ -9,7 +9,7 @@ export const useScreenType = (screenType: ScreenType) => {
 
   useEffect(() => {
     dispatch(setScreenType(screenType));
-  }, []);
+  }, [dispatch, screenType]);
 
   return { storedScreenType };
 };

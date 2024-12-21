@@ -1,8 +1,9 @@
 "use client";
 
 import { useAppSelector } from "@/src/lib/hooks";
-import styles from "./index.module.css";
 import { interpolateText } from "@/src/utils/interpolateText";
+
+import styles from "./index.module.css";
 
 export const ResultScreen = () => {
   const answers = useAppSelector((state) => state.survey.answers);

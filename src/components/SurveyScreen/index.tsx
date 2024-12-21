@@ -2,11 +2,11 @@
 
 import { QuestionData } from "@/src/types";
 import { useClickButton } from "@/src/hooks/useClickButton";
-
 import { useScreenType } from "@/src/hooks/useScreenType";
+import { useInterpolateQuestion } from "@/src/hooks/useInterpolateQuestion";
+
 import { Button } from "../Button";
 import styles from "./index.module.css";
-import { useInterpolateQuestion } from "@/src/hooks/useInterpolateQuestion";
 
 interface SurveyScreenProps {
   questionData: QuestionData;
@@ -22,7 +22,7 @@ export const SurveyScreen = ({ questionData }: SurveyScreenProps) => {
   const { interpolatedQuestion } = useInterpolateQuestion(
     questionData.question
   );
-    
+
   return (
     <section className={styles.surveyScreen}>
       <div

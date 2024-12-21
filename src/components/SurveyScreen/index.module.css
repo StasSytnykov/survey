@@ -1,3 +1,10 @@
+.surveyScreen {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 330px;
+}
+
 .surveyInfoScreen {
   position: absolute;
   width: 100%;
@@ -17,4 +24,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.question {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333333;
+}
+
+.questionStatement {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333333;
+}
+
+.answersList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

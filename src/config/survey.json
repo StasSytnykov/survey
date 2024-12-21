@@ -55,11 +55,11 @@
     "options": [
       {
         "label": "I was unhappy with low things were going in my relationship",
-        "next": "q10"
+        "next": "q6"
       },
       {
         "label": "I was unhappy with parts of my relationship, but some thing were working",
-        "next": "q10"
+        "next": "q6"
       },
       { "label": "I was generally happy with my relationship", "next": "q6" },
       { "label": "I’ve never been in a relationship", "next": "q6" }
@@ -190,7 +190,7 @@
     "statement": "We analyze hundreds of data points to create your unique astrological blueprint. This is combined with AI to tailor-make your astrological insights, based on your answers. We’re going to change your relationship with astrology.",
     "screenType": "info",
     "questionType": "single",
-    "options": [{ "label": "Next", "next": "q13" }]
+    "options": [{ "label": "Next", "next": "q16" }]
   },
   {
     "id": "q15",

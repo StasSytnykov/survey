@@ -3,7 +3,13 @@ body {
   min-height: 100vh;
   padding: 0;
   margin: 0;
-  font-family: open-sans, sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 a {
@@ -13,4 +19,18 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  all: unset;
 }

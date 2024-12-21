@@ -18,6 +18,7 @@
 .main {
   grid-area: main;
   padding: 80px 0;
+  z-index: 1;
 }
 
 .header,

@@ -5,11 +5,11 @@
   max-width: 330px;
 }
 
-.surveyInfoScreen {
+.dynamicBackground[data-screen-type="info"] {
   position: absolute;
+  max-width: 100%;
   width: 100%;
   height: 100%;
-  padding-top: 70px;
   top: 0;
   left: 0;
 
@@ -20,10 +20,7 @@
     #543c97 55.84%,
     #6939a2 74.96%
   );
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  z-index: -1;
 }
 
 .question {
@@ -33,11 +30,24 @@
   color: #333333;
 }
 
+.question[data-screen-type="info"] {
+  color: #fbfbff;
+  text-align: center;
+}
+
 .questionStatement {
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
   color: #333333;
+}
+
+.questionStatement[data-screen-type="info"] {
+  text-align: center;
+  color: #fbfbff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .answersList {

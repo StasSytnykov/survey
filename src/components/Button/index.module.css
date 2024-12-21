@@ -1,4 +1,4 @@
-.actionButton {
+.button {
   display: block;
   position: relative;
   z-index: 1;
@@ -19,7 +19,7 @@
   transition: color 0.3s ease-in;
 }
 
-.actionButton::before {
+.button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -39,29 +39,47 @@
   border-radius: 16px;
 }
 
-.actionButton:hover::before,
-.actionButton:focus::before,
-.actionButton:active::before {
+.button:hover::before,
+.button:focus::before,
+.button:active::before {
   opacity: 1;
 }
 
-.actionButton:hover,
-.actionButton:focus,
-.actionButton:active {
+.button:hover,
+.button:focus,
+.button:active {
   color: #fafafa;
   border: 1px solid transparent;
 }
 
-.actionButton a {
+.button a {
   display: block;
   width: 100%;
   line-height: 64px;
   padding: 0 20px;
 }
 
-.actionButton span,
-.actionButton p {
+.button span,
+.button p {
   display: block;
   width: 100%;
   padding: 0 20px;
+}
+
+.button[data-screen-type="info"] {
+  background-color: #fbfbff;
+  box-shadow: #d8d6d640;
+  color: #6a3aa2;
+  transition: all 0.3s ease-in;
+}
+
+.button[data-screen-type="info"]:hover,
+.button[data-screen-type="info"]:focus,
+.button[data-screen-type="info"]:active {
+  background-color: #f0f0f0;
+  color: #543c97;
+}
+
+.button[data-screen-type="info"]::before {
+  content: none;
 }

@@ -21,14 +21,28 @@ export const SurveyScreen = ({ questionData }: SurveyScreenProps) => {
 
   return (
     <section className={styles.surveyScreen}>
-      <h1 className={styles.question}>{questionData.question}</h1>
+      <div
+        className={styles.dynamicBackground}
+        data-screen-type={storedScreenType}
+      />
+      <h1 className={styles.question} data-screen-type={storedScreenType}>
+        {questionData.question}
+      </h1>
       {questionData.statement && (
-        <p className={styles.questionStatement}>{questionData.statement}</p>
+        <p
+          className={styles.questionStatement}
+          data-screen-type={storedScreenType}
+        >
+          {questionData.statement}
+        </p>
       )}
       <ul className={styles.answersList}>
         {questionData.options.map((option) => (
           <li key={option.label}>
-            <Button onClick={() => handleButtonClick(option)}>
+            <Button
+              onClick={() => handleButtonClick(option)}
+              screenType={storedScreenType}
+            >
               <span>{option.label}</span>
             </Button>
           </li>

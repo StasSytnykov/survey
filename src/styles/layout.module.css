@@ -1,16 +1,18 @@
 .container {
   display: grid;
   grid-template-areas:
-    "nav"
     "header"
-    "main"
-    "footer";
-  grid-template-rows: auto auto 1fr 36px;
+    "main";
+  grid-template-rows: auto 1fr;
   align-items: center;
   min-height: 100vh;
+  background-color: #fff0f0;
 }
 
 .header {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
   grid-area: header;
 }
 
@@ -24,19 +26,4 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.footer {
-  grid-area: footer;
-  justify-self: center;
-}
-
-.nav {
-  grid-area: nav;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 8px;
-  font-size: calc(10px + 2vmin);
 }

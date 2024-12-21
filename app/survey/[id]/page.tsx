@@ -25,9 +25,5 @@ export default async function Page({ params }: Params) {
   const { id } = await params;
   const questionData = getQuestion(id);
 
-  return (
-    <section>
-      <SurveyScreen questionData={questionData} />
-    </section>
-  );
+  return <SurveyScreen questionData={questionData} />;
 }

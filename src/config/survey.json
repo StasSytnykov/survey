@@ -173,7 +173,7 @@
     "questionType": "single",
     "options": [
       { "label": "Yes", "next": "q13" },
-      { "label": "No", "next": "q13" }
+      { "label": "No", "next": "q14" }
     ]
   },
   {
@@ -182,13 +182,18 @@
     "statement": "We analyze hundreds of data points to create your unique astrological blueprint. This is combined with AI to tailor-make your astrological insights, based on your answers. We’re going to change your relationship with astrology.",
     "screenType": "info",
     "questionType": "single",
-    "options": [
-      { "label": "Next", "next": "q13" },
-      { "label": "Next", "next": "q13" }
-    ]
+    "options": [{ "label": "Next", "next": "q15" }]
   },
   {
     "id": "q14",
+    "question": "So how does it work?",
+    "statement": "We analyze hundreds of data points to create your unique astrological blueprint. This is combined with AI to tailor-make your astrological insights, based on your answers. We’re going to change your relationship with astrology.",
+    "screenType": "info",
+    "questionType": "single",
+    "options": [{ "label": "Next", "next": "q13" }]
+  },
+  {
+    "id": "q15",
     "question": "What is most important to you?",
     "statement": "",
     "screenType": "singleChoice",
@@ -201,7 +206,7 @@
     ]
   },
   {
-    "id": "q15",
+    "id": "q16",
     "question": "Is emotional control tricky for you?",
     "statement": "",
     "screenType": "singleChoice",

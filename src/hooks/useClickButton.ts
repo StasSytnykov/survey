@@ -1,7 +1,7 @@
 import { useRouter } from "next/navigation";
 
 import { useAppDispatch } from "../lib/hooks";
-import { setAnswers } from "../lib/answersSlice/answersSlice";
+import { setAnswers } from "../lib/surveySlice/surveySlice";
 import { Option } from "../types";
 
 interface UseClickButtonProps {
@@ -17,7 +17,7 @@ export const useClickButton = ({ question }: UseClickButtonProps) => {
       return router.push("/results");
     }
 
-    dispatch(setAnswers({ question, answer: label }));
+    dispatch(setAnswers({ question, result: label }));
     router.push(next);
   };
 

@@ -4,7 +4,7 @@ import { useAppSelector } from "@/src/lib/hooks";
 import styles from "./index.module.css";
 
 export const ResultScreen = () => {
-  const { answers } = useAppSelector((state) => state.answers);
+  const answers = useAppSelector((state) => state.survey.answers);
 
   return (
     <section className={styles.resultSection}>
@@ -13,8 +13,7 @@ export const ResultScreen = () => {
         {answers.map((answer) => (
           <li key={answer.question} className={styles.resultItem}>
             <h2>{answer.question}</h2>
-
-            <p>{answer.answer}</p>
+            <p>{answer.result}</p>
           </li>
         ))}
       </ol>

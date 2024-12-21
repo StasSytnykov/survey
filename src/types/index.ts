@@ -3,11 +3,16 @@ export interface Option {
   next: string | null;
 }
 
+export enum ScreenType {
+  SINGLE = "singleChoice",
+  INFO = "info",
+}
+
 export interface QuestionData {
   id: string;
   question: string;
   statement: string;
-  screenType: string;
+  screenType: ScreenType;
   questionType: string;
   options: Option[];
 }

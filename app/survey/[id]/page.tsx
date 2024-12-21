@@ -14,7 +14,7 @@ const getQuestion = (id: string): QuestionData => {
   if (!questionData) {
     throw new Error(`Question with id "${id}" not found.`);
   }
-  return questionData;
+  return questionData as QuestionData;
 };
 
 interface Params {

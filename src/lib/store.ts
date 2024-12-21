@@ -1,7 +1,7 @@
 import { combineSlices, configureStore } from "@reduxjs/toolkit";
-import { answersSlice } from "./answersSlice/answersSlice";
+import { surveySlice } from "./surveySlice/surveySlice";
 
-const rootReducer = combineSlices(answersSlice);
+const rootReducer = combineSlices(surveySlice);
 
 export type RootState = ReturnType<typeof rootReducer>;
 

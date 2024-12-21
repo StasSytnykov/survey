@@ -5,6 +5,7 @@ import { useClickButton } from "@/src/hooks/useClickButton";
 
 import styles from "./index.module.css";
 import { Button } from "../Button";
+import { useScreenType } from "@/src/hooks/useScreenType";
 
 interface SurveyScreenProps {
   questionData: QuestionData;
@@ -13,6 +14,9 @@ interface SurveyScreenProps {
 export const SurveyScreen = ({ questionData }: SurveyScreenProps) => {
   const { handleButtonClick } = useClickButton({
     question: questionData.question,
+  });
+  const { storedScreenType } = useScreenType({
+    screenType: questionData.screenType,
   });
 
   return (

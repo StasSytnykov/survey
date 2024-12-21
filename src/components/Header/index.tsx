@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 
 import { useAppDispatch, useAppSelector } from "@/src/lib/hooks";
-import { resetAnswers } from "@/src/lib/surveySlice/surveySlice";
+import { resetSurvey } from "@/src/lib/surveySlice/surveySlice";
 import { ScreenType } from "@/src/types";
 
 import logo from "../../../public/images/logo.webp";
@@ -25,7 +25,7 @@ export const Header = () => {
     if (window.history.length > 1) {
       router.back();
     } else {
-      dispatch(resetAnswers());
+      dispatch(resetSurvey());
       router.push("/");
     }
   };
@@ -33,19 +33,19 @@ export const Header = () => {
   return (
     <nav className={styles.nav}>
       {pathname.includes("survey") ? (
-        <span onClick={handleBack} className={styles.link}>
-          <Image
-            src={storedScreenType === ScreenType.INFO ? chevronWhite : chevron}
-            height={24}
-            width={24}
-            alt="Chervon icon"
-          />
-        </span>
+        <Image
+          onClick={handleBack}
+          src={storedScreenType === ScreenType.INFO ? chevronWhite : chevron}
+          height={24}
+          width={24}
+          alt="Chervon icon"
+          className={styles.backButton}
+        />
       ) : (
-        <span />
+        <div />
       )}
       <Link
-        onClick={() => dispatch(resetAnswers())}
+        onClick={() => dispatch(resetSurvey())}
         href="/"
         className={styles.link}
       >

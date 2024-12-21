@@ -2,7 +2,6 @@
 
 import { ScreenData } from "@/src/types";
 import { useClickButton } from "@/src/hooks/useClickButton";
-import { useScreenType } from "@/src/hooks/useScreenType";
 
 import { Button } from "../Button";
 import styles from "./index.module.css";
@@ -17,7 +16,6 @@ export const InfoScreen = ({ screenData }: ScreenProps) => {
     id: screenData.id,
     screenType: screenData.screenType,
   });
-  const { storedScreenType } = useScreenType(screenData.screenType);
 
   return (
     <section className={styles.infoScreen}>
@@ -28,7 +26,7 @@ export const InfoScreen = ({ screenData }: ScreenProps) => {
       )}
       <Button
         onClick={() => handleButtonClick(screenData.options[0])}
-        screenType={storedScreenType}
+        screenType={screenData.screenType}
       >
         <span>{screenData.options[0].label}</span>
       </Button>

@@ -76,7 +76,7 @@
 .button[data-screen-type="info"]:hover,
 .button[data-screen-type="info"]:focus,
 .button[data-screen-type="info"]:active {
-  background-color: #f0f0f0;
+  background-color: #dfdddd;
   color: #543c97;
 }
 

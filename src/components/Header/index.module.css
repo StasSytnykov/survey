@@ -7,6 +7,10 @@
   max-width: 1230px;
 }
 
-.link:not(:first-child) {
+.backButton {
+  cursor: pointer;
+}
+
+.link {
   justify-self: center;
 }

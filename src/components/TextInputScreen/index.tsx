@@ -11,12 +11,13 @@ interface SurveyScreenProps {
   screenData: ScreenData;
 }
 
-export const SingleChoiceScreen = ({ screenData }: SurveyScreenProps) => {
+export const TextInputScreem = ({ screenData }: SurveyScreenProps) => {
   const { handleButtonClick } = useClickButton({
     question: screenData.question,
     id: screenData.id,
     screenType: screenData.screenType,
   });
+
   const { interpolatedQuestion } = useInterpolateQuestion(screenData.question);
 
   return (
@@ -29,10 +30,7 @@ export const SingleChoiceScreen = ({ screenData }: SurveyScreenProps) => {
       <ul className={styles.answersList}>
         {screenData.options.map((option) => (
           <li key={option.label}>
-            <Button
-              onClick={() => handleButtonClick(option)}
-              screenType={screenData.screenType}
-            >
+            <Button screenType={screenData.screenType}>
               <span>{option.label}</span>
             </Button>
           </li>

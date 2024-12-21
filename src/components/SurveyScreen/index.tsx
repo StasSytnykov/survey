@@ -1,9 +1,10 @@
 "use client";
 
 import { ScreenData, ScreenType } from "@/src/types";
+import { useSaveScreenType } from "@/src/hooks/useSaveScreenType";
 import { SingleChoiceScreen } from "../SingleChoiceScreen";
 import { InfoScreen } from "../InfoScreen";
-import { useSaveScreenType } from "@/src/hooks/useSaveScreenType";
+import { TextInputScreen } from "../TextInputScreen";
 
 interface SurveyScreenProps {
   screenData: ScreenData;
@@ -15,8 +16,8 @@ export const SurveyScreen = ({ screenData }: SurveyScreenProps) => {
   switch (screenData.screenType) {
     case ScreenType.SINGLE:
       return <SingleChoiceScreen screenData={screenData} />;
-    // case ScreenType.INPUT:
-    //   return <TextInputScreen screenData={screenData} />;
+    case ScreenType.INPUT:
+      return <TextInputScreen screenData={screenData} />;
     case ScreenType.INFO:
       return <InfoScreen screenData={screenData} />;
     default:

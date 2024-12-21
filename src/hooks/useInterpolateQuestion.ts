@@ -5,8 +5,6 @@ export const useInterpolateQuestion = (question: string) => {
   const gender = useAppSelector((state) => state.survey.gender);
   const parentStatus = useAppSelector((state) => state.survey.parentStatus);
 
-  console.log(gender);
-
   const placeholders = {
     gender: gender,
     "who have children": parentStatus ? "who have children" : "",

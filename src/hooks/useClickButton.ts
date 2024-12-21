@@ -29,9 +29,6 @@ export const useClickButton = ({
     }
 
     if (question.toLowerCase().includes("your gender")) {
-      console.log("test");
-      console.log(label);
-
       dispatch(setGender(label));
     }
 

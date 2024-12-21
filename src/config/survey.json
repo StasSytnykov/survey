@@ -15,7 +15,7 @@
     "statement": "",
     "screenType": "singleChoice",
     "options": [
-      { "label": "Single", "next": "q4" },
+      { "label": "Single", "next": "q20" },
       {
         "label": "In a relationship",
         "next": "q3"

@@ -21,7 +21,6 @@ export const SingleChoiceScreen = ({ screenData }: SurveyScreenProps) => {
 
   return (
     <section className={styles.surveyScreen}>
-      <div className={styles.dynamicBackground} />
       <h1 className={styles.question}>{interpolatedQuestion}</h1>
       {screenData.statement && (
         <p className={styles.questionStatement}>{screenData.statement}</p>

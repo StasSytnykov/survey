@@ -1,0 +1,30 @@
+.surveyScreen {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 330px;
+}
+
+.question {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333333;
+}
+
+.question::first-letter {
+  text-transform: capitalize;
+}
+
+.questionStatement {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333333;
+}
+
+.answersList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

@@ -23,6 +23,13 @@
     ]
   },
   {
+    "id": "q20",
+    "question": "How old are you?",
+    "statement": "",
+    "screenType": "textInput",
+    "options": [{ "label": "Age", "next": "q4" }]
+  },
+  {
     "id": "q3",
     "question": "Are you a parent?",
     "statement": "",

@@ -1,7 +1,7 @@
-import { QuestionData } from "@/src/types";
-import { SurveyScreen } from "@/src/components/SurveyScreen";
+import { ScreenData } from "@/src/types";
 
 import survey from "../../../src/config/survey.json";
+import { SurveyScreen } from "@/src/components/SurveyScreen";
 
 export async function generateStaticParams() {
   return survey.map((question) => ({
@@ -9,12 +9,12 @@ export async function generateStaticParams() {
   }));
 }
 
-const getQuestion = (id: string): QuestionData => {
-  const questionData = survey.find((q) => q.id === id);
-  if (!questionData) {
+const getQuestion = (id: string): ScreenData => {
+  const screenData = survey.find((q) => q.id === id);
+  if (!screenData) {
     throw new Error(`Question with id "${id}" not found.`);
   }
-  return questionData as QuestionData;
+  return screenData as ScreenData;
 };
 
 interface Params {
@@ -23,9 +23,9 @@ interface Params {
 
 const Page = async ({ params }: Params) => {
   const { id } = await params;
-  const questionData = getQuestion(id);
+  const screenData = getQuestion(id);
 
-  return <SurveyScreen questionData={questionData} />;
+  return <SurveyScreen screenData={screenData} />;
 };
 
 export default Page;

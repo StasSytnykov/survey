@@ -6,9 +6,10 @@ export interface Option {
 export enum ScreenType {
   SINGLE = "singleChoice",
   INFO = "info",
+  INPUT = "textInput",
 }
 
-export interface QuestionData {
+export interface ScreenData {
   id: string;
   question: string;
   statement: string;

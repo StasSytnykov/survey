@@ -18,7 +18,7 @@ export const answersSlice = createSlice({
   name: "answers",
   initialState,
   reducers: (create) => ({
-    addAnswers: create.reducer((state, action: PayloadAction<Answer>) => {
+    setAnswers: create.reducer((state, action: PayloadAction<Answer>) => {
       state.answers.push(action.payload);
     }),
   }),
@@ -28,6 +28,6 @@ export const answersSlice = createSlice({
   },
 });
 
-export const { addAnswers } = answersSlice.actions;
+export const { setAnswers } = answersSlice.actions;
 
 export const { selectAnswers } = answersSlice.selectors;

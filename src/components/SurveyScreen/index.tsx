@@ -1,25 +1,19 @@
 "use client";
 
 import { QuestionData } from "@/src/types";
-import { Button } from "../Button";
-import { useRouter } from "next/navigation";
+import { useClickButton } from "@/src/hooks/useClickButton";
 
 import styles from "./index.module.css";
+import { Button } from "../Button";
 
 interface SurveyScreenProps {
   questionData: QuestionData;
 }
 
 export const SurveyScreen = ({ questionData }: SurveyScreenProps) => {
-  const router = useRouter();
-
-  const handleClick = (nextQuestion: string | null) => {
-    if (nextQuestion === null) {
-      return router.push("/results");
-    }
-
-    router.push(nextQuestion);
-  };
+  const { handleButtonClick } = useClickButton({
+    question: questionData.question,
+  });
 
   return (
     <section className={styles.surveyScreen}>
@@ -30,7 +24,7 @@ export const SurveyScreen = ({ questionData }: SurveyScreenProps) => {
       <ul className={styles.answersList}>
         {questionData.options.map((option) => (
           <li key={option.label}>
-            <Button onClick={() => handleClick(option.next)}>
+            <Button onClick={() => handleButtonClick(option)}>
               {option.label}
             </Button>
           </li>

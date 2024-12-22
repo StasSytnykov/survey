@@ -1,19 +1,14 @@
 "use client";
 
 import { useAppSelector } from "@/src/lib/hooks";
+import { usePlaceholders } from "@/src/hooks/usePlaceholders";
 import { interpolateText } from "@/src/utils/interpolateText";
 
 import styles from "./index.module.css";
 
 export const ResultScreen = () => {
   const answers = useAppSelector((state) => state.survey.answers);
-  const gender = useAppSelector((state) => state.survey.gender);
-  const parentStatus = useAppSelector((state) => state.survey.parentStatus);
-
-  const placeholders = {
-    gender: gender,
-    "who have children": parentStatus ? "who have children" : "",
-  };
+  const placeholders = usePlaceholders();
 
   return (
     <section className={styles.resultSection}>

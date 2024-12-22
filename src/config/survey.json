@@ -44,7 +44,7 @@
   },
   {
     "id": "q5",
-    "question": "Single {gender} {who have children} need a slightly different approach to find their perfect partner. But first, how did you feel in your last relationship?",
+    "question": "{Gender} {who have children} need a slightly different approach to improve their relationship. Which statement best describes you?",
     "statement": "",
     "screenType": "singleChoice",
     "options": [
@@ -139,7 +139,7 @@
   },
   {
     "id": "q11",
-    "question": "{Gender} {who have children} need a slightly different approach to improve their relationship. Which statement best describes you?",
+    "question": "Single {gender} {who have children} need a slightly different approach to find their perfect partner. But first, how did you feel in your last relationship?",
     "statement": "",
     "screenType": "singleChoice",
     "options": [

@@ -75,8 +75,8 @@ You can add or modify question configurations in the project by following this e
 - `statement`: Additional context or information to display (optional).
 - `screenType`: Defines the type of input. Here is the three possible types `singleChoice`, `textInput` and `info`
 - `options`: An array of possible answers. Each option contains:
-  - `label`: The answer text or the next step button if it's `textInput` type.
+  - `label`: The answer text or the next step button if it's not `textInput` type.
   - `next`: The ID of the next question or `null` if it is the last question.
 
 ### File Location
-Save the configuration in a JSON file in this location `/src/config/survey.json`.
+Save the configuration in a JSON file in this location `/src/config/survey.json` or you can import new survey file with the same structure of survey in this location `/app/survey/[id]/page.tsx`.

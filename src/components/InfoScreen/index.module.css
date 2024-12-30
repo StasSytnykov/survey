@@ -1,10 +1,3 @@
-.infoScreen {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 330px;
-}
-
 .infoBackground {
   position: absolute;
   max-width: 100%;
@@ -21,20 +14,4 @@
     #6939a2 74.96%
   );
   z-index: -1;
-}
-
-.infoTitle {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #fbfbff;
-  text-align: center;
-}
-
-.infoText {
-  text-align: center;
-  color: #fbfbff;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
 }

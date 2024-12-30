@@ -16,3 +16,10 @@ export interface ScreenData {
   screenType: ScreenType;
   options: Option[];
 }
+
+export interface DefaultSurveyScreenProps {
+  title: string;
+  options: Option[];
+  statement?: string;
+  handleButtonClick: ({ label, next }: Option) => void;
+}

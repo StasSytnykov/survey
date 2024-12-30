@@ -2,34 +2,23 @@
 
 import { useState } from "react";
 
-import { ScreenData } from "@/src/types";
-import { useClickButton } from "@/src/hooks/useClickButton";
-import { useInterpolateQuestion } from "@/src/hooks/useInterpolateQuestion";
+import { DefaultSurveyScreenProps } from "@/src/types";
 
+import { ScreenDescription } from "../ScreenDescription";
 import { TextInput } from "../TextInput";
 import { Button } from "../Button";
-import styles from "./index.module.css";
 
-interface SurveyScreenProps {
-  screenData: ScreenData;
-}
-
-export const TextInputScreen = ({ screenData }: SurveyScreenProps) => {
+export const TextInputScreen = ({
+  title,
+  statement,
+  options,
+  handleButtonClick,
+}: DefaultSurveyScreenProps) => {
   const [inputValue, setInputValue] = useState<string>("");
-  const { handleButtonClick } = useClickButton({
-    question: screenData.question,
-    id: screenData.id,
-    screenType: screenData.screenType,
-  });
-  const { interpolatedQuestion } = useInterpolateQuestion(screenData.question);
 
   return (
-    <section className={styles.surveyScreen}>
-      <div className={styles.dynamicBackground} />
-      <h1 className={styles.question}>{interpolatedQuestion}</h1>
-      {screenData.statement && (
-        <p className={styles.questionStatement}>{screenData.statement}</p>
-      )}
+    <>
+      <ScreenDescription title={title} statement={statement} />
       <TextInput
         value={inputValue}
         onChange={setInputValue}
@@ -39,13 +28,12 @@ export const TextInputScreen = ({ screenData }: SurveyScreenProps) => {
         onClick={() =>
           handleButtonClick({
             label: inputValue,
-            next: screenData.options[0].next,
+            next: options[0].next,
           })
         }
-        screenType={screenData.screenType}
       >
-        <span>{screenData.options[0].label}</span>
+        <span>{options[0].label}</span>
       </Button>
-    </section>
+    </>
   );
 };

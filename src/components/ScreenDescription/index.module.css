@@ -1,0 +1,33 @@
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333333;
+}
+
+.title::first-letter {
+  text-transform: capitalize;
+}
+
+.statement {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333333;
+}
+
+.title[data-screen-type="info"] {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fbfbff;
+  text-align: center;
+}
+
+.statement[data-screen-type="info"] {
+  text-align: center;
+  color: #fbfbff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
